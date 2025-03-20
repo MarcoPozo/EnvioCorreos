@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+@theme {
+  --color-fondo-principal: #0b0f19; /* Fondo principal: Gris espacial oscuro */
+  --color-fondo-secundario: #1f2937; /* Fondo secundario: Gris luna metálico */
+  --color-lunar-principal: #d1d5db; /* Color lunar principal (acentos) */
+  --color-glow-brillante: #38bdf8; /* Acento brillante lunar (glow) */
+  --color-cosmico-alt: #8b5cf6; /* Acento cósmico alternativo */
+  --color-texto-principal: #f9fafb; /* Texto principal */
+  --color-texto-secundario: #9aa3bb; /* Texto secundario */
+  --color-cta-boton: #38bdf8; /* Botones CTA (neón azul) */
+  --color-hover-glow: #67e8f9; /* Hover o sombra glow */
+
+  --font-heading: "Orbitron", sans-serif; /* Encabezados */
+  --font-body: "Archivo", sans-serif; /* Cuerpo de texto */
+}
