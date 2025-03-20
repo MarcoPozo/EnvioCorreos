@@ -19,7 +19,7 @@ Proyecto backend en Node.js + Express que incluye un formulario de contacto func
 
 ### 1. Clona el repositorio
 ```bash
-git clone https://github.com/tuusuario/moonstudio.git
+git clone https://github.com/MarcoPozo/EnvioCorreos.git
 ```
 
 ### 2. Instala las dependencias
@@ -35,7 +35,6 @@ cp .env.example .env
 
 ### 4. Configura tus variables de entorno en el archivo `.env`:
 ```env
-PORT=3000
 EMAIL_USER=tu_correo@gmail.com
 EMAIL_PASS=tu_contraseña_aplicacion
 ```
