@@ -2,5 +2,31 @@
     <p>&copy; <%= new Date().getFullYear() %> Moon Studio · Todos los derechos reservados.</p>
     <p>Diseñado con 💻 desde la luna 🚀</p>
 </footer>
+
+<!-- SWEETALERT -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Success -->
+<% if (success) { %>
+    <script>
+      Swal.fire({
+        icon: "success",
+        title: "¡Mensaje enviado!",
+        text: "Tu mensaje fue enviado correctamente 🚀",
+      });
+    </script>
+<% } %> 
+
+<!-- Error -->
+<% if (error) { %>
+    <script>
+      Swal.fire({
+        icon: "error",
+        title: "Error al enviar",
+        text: "Hubo un problema al enviar el mensaje ❌",
+      });
+    </script>
+<% } %>
+
 </body>
 </html>

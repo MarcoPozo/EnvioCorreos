@@ -4,7 +4,8 @@ import { transporter } from "../config/nodemailer.js";
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.render("index", { title: "Inicio" });
+  const { success, error } = req.query;
+  res.render("index", { title: "Inicio", success, error });
 });
 
 router.post("/send-email", async (req, res) => {
@@ -22,10 +23,10 @@ router.post("/send-email", async (req, res) => {
         <p><strong>Mensaje:</strong><br>${message}</p>
       `,
     });
-    res.status(200).send("Mensaje enviado correctamente");;
+    res.redirect("/?success=1");
   } catch (error) {
     console.error("Error al enviar el mensaje: ", error);
-    res.status(500).send("Error al enviar el mensaje ❌");
+    res.redirect("/?error=1");
   }
 });
 
