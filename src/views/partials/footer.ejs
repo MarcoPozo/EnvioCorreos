@@ -5,26 +5,20 @@
 
 <!-- SWEETALERT -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- CUSTOM JS -->
+<script src="/js/alert.js"></script>
 
 <!-- Success -->
 <% if (success) { %>
     <script>
-      Swal.fire({
-        icon: "success",
-        title: "¡Mensaje enviado!",
-        text: "Tu mensaje fue enviado correctamente 🚀",
-      });
+      viewAlert("success", "!Mensaje enviado¡", "Tu mensaje fue enviado correctamente 🚀");
     </script>
 <% } %> 
 
 <!-- Error -->
 <% if (error) { %>
     <script>
-      Swal.fire({
-        icon: "error",
-        title: "Error al enviar",
-        text: "Hubo un problema al enviar el mensaje ❌",
-      });
+      viewAlert("error", "Error al enviar", "Hubo un problema al enviar el mensaje ❌");
     </script>
 <% } %>
 
